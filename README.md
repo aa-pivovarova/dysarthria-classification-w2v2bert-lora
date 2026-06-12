@@ -1,9 +1,9 @@
 # To launch:
 
 - Download and unzip the EasyCall dataset into the work/DATASETS folder: work/DATASETS/EasyCall/...
-- main.py - launch with `python main.py` and wait.
 - `docker compose build` in the root dir.
 - `docker compose run --rm app bash` after the container builds.
+- main.py - launch with `python main.py` and wait.
 
 <details>
 <summary><b>Previous exp:</b></summary>
