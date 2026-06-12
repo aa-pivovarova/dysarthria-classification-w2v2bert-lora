@@ -1,13 +1,9 @@
-# phd-experiment-1
+# To launch:
 
-Currently working on fine-tuning a w2v2-bert-2.0 on the TORGO DB.
-- functions.py - for all functions
+- Download and unzip the EasyCall dataset into the work/DATASETS folder: work/DATASETS/EasyCall/...
 - main.py - launch with `python main.py` and wait.
-
-DOCKER INFORMATION
-- Simply run docker
-- Environment variables:
-- - HF_TOKEN - huggingface personal write license token for downloads and checkpoints
+- `docker compose build` in the root dir.
+- `docker compose run --rm app bash` after the container builds.
 
 <details>
 <summary><b>Previous exp:</b></summary>
