@@ -1,0 +1,21 @@
+numpy # np.mean, np.array
+pandas # pd.DataFrame, read_csv, to_csv
+scikit-learn # train_test_split, StratifiedKFold
+datasets==3.6.0 # Dataset, Audio, load_dataset
+dataclasses # @dataclass
+transformers # Wav2Vec2BertProcessor, Trainer, TrainingArguments, Wav2Vec2BertForSequenceClassification
+accelerate # Неявно требуется transformers, но не вызывается напрямую
+evaluate # evaluate.load("accuracy"), "f1" и т.д.
+typing # List, Dict, Union
+ipython # IPython.display → display, HTML
+ipywidgets
+optuna # Для подбора гиперпараметров
+matplotlib # Для графиков
+optuna-dashboard # Optuna дашборд с графиками
+peft # LoRA
+librosa
+soundfile
+
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch==2.4.1+cu121
+torchaudio==2.4.1+cu121 # Косвенно: Audio(sampling_rate=...) в datasets использует torchaudio для загрузки .wav.
